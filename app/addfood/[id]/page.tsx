@@ -75,7 +75,7 @@ export default function AddFoodPage() {
       return;
     }
 
-    const user_id = localStorage.getItem("user_id");
+    const user_id = localStorage.getItem("userId");
     if (!user_id) {
       setError("ไม่พบข้อมูลผู้ใช้ กรุณาเข้าสู่ระบบใหม่");
       router.push("/login");
